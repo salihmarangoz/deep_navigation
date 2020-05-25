@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="deep_navigation_node" pkg="deep_navigation" type="deep_navigation_node.py" output="screen"/>
+
+</launch>
+

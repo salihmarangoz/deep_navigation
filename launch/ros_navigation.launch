@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node name="rviz_description" pkg="rostopic" type="rostopic" args="pub -r 1 /description_text visualization_msgs/Marker '{header: {frame_id: map}, ns: description, type: 9, scale: {z: 0.5}, color: {a: 1,r: 1,g: 1,b: 1}, pose: {position: {x: -9}}, text: !!str Use 2D Nav Goal button to navigate the robot}'"/>
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find deep_navigation)/config/ros_navigation/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find deep_navigation)/config/ros_navigation/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find deep_navigation)/config/ros_navigation/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find deep_navigation)/config/ros_navigation/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find deep_navigation)/config/ros_navigation/local_planner_params.yaml" command="load" />
+    <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+    <param name="base_global_planner" type="string" value="navfn/NavfnROS" />
+    <param name="conservative_reset_dist" type="double" value="3.0" />
+    <param name="controller_frequency" type="double" value="15.0" />
+  </node>
+
+</launch>
+

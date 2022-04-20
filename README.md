@@ -1,6 +1,13 @@
 # Deep Navigation
 
-[TOC]
+* [Deep Navigation](#deep-navigation)
+   * [1. Introduction](#1-introduction)
+   * [2. Installation](#2-installation)
+   * [3. Running](#3-running)
+   * [4. Designing a World](#4-designing-a-world)
+   * [5. Simulator Parameters](#5-simulator-parameters)
+      * [5.1. Lidar Model](#51-lidar-model)
+      * [5.2. Simulator Speed](#52-simulator-speed)
 
 ## 1. Introduction
 

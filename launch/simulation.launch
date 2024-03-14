@@ -7,7 +7,7 @@
 
     <!-- ================ PARAMETERS =================== -->
     <arg name="start_gazebo_server" default="true"/>
-    <arg name="start_gazebo_gui" default="false"/>
+    <arg name="start_gazebo_gui" default="true"/>
     <arg name="start_gazebo_killer" default="true"/>
     <arg name="start_rviz" default="true"/>
     <arg name="start_plotter" default="true"/>

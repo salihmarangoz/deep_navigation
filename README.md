@@ -11,22 +11,15 @@
 
 ## 1. Introduction
 
+Generating velocity commands by the laser data to a neural network? Sounds like a simple idea. But it is not that easy. I created this repository to try different approaches to solve this problem, but I couldn't find time to focus on the model itself. Maybe you can create a better model?
+
 ![ss1](img/ss1.png)
 
-
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ZuowGdhRvOs/0.jpg)](https://www.youtube.com/watch?v=ZuowGdhRvOs)
 
 ## 2. Installation
 
-1. Install `ROS Melodic (or Kinetic)` and `Anaconda3`:
-
-   - You can install these libraries by yourself or using this installer: https://github.com/salihmarangoz/All-in-One-Installer
-   
-2. Install `ROS-Python3` required libraries:
-
-   ```bash
-   $ sudo apt install python3-pip python3-yaml
-   $ sudo pip3 install rospkg catkin_pkg
-   ```
+1. Install ROS Noetic.
 
 3. Clone the repository into `~/catkin_ws/src` folder and build the workspace:
 
@@ -38,14 +31,7 @@
    $ catkin build --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo
    ```
 
-4. Modify file `deep_navigation/scripts/deep_navigation_node.py` and `deep_navigation/scripts/create_dataset.py` correctly to import Anaconda3 and ROS at the same time. Run the following commands and modify these files according to the outputs.
-
-   ```bash
-   $ source activate YOUR_CONDA_ENV_HERE; which python # modify line 1
-   $ pip3 show rospkg | grep Location # modify line 3
-   ```
-
-
+4. Install Python dependencies (ToDo)
 
 ## 3. Running
 

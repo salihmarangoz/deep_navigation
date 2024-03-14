@@ -1,4 +1,4 @@
-#!/anaconda3/envs/tensorflow/bin/python
+#!/usr/bin/env python
 import sys
 sys.path.append('/usr/local/lib/python3.6/dist-packages')
 
